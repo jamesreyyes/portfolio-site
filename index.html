@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="author" content="YourName">
     <meta name="description" content="James Reyes UI/UX Designer based in Los Angeles">
@@ -13,12 +17,12 @@
       <!-- For the navigation -->
       <div>
         <picture>
+          <a href="index.html"
           <source srcset="img/logo.jpg" media="(max-width:767px)">
-          <img src="img/logo.jpg" alt="logo">
+          <img id="logo" src="img/logo.jpg" alt="logo">
         </picture>
         <nav>
           <u1>
-          <li><a href="index.html">James Reyes</a></li>
         <li><a href="index.html">Work</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -28,7 +32,7 @@
     </header>
     <main>
       <!-- For the hero section -->
-      <div>
+      <div id="hero">
         <div>
           <h1>Hi, my name is James Reyes <br>
             <span>I'm a UI/UX Designer based in Los Angeles! </span>
@@ -40,7 +44,7 @@
       <div>
         <div>
           <h2> My Work </h2>
-          <div>
+          <div id="work">
             <div>
               <picture>
                 <source srcset="img/spoiled_milk/spoiledmilk_images_small/spoiledmilktb@1.jpg" media="(max-width:767px)">
@@ -50,7 +54,7 @@
             <div>
               <h3> Spoiled Milk </h3>
               <p> Fridge Manager app that tracks expiration dates and builds recipes based on food inside your fridge </P>
-              <a href="spoiled_milk.html">Read more</a>
+              <a href="spoiled_milk.html" class="button">Read more</a>
             </div>
           </div>
           <!-- Project 2 -->
@@ -64,7 +68,7 @@
             <div>
               <h3> Film Space </h3>
               <p> A responsive web app that makes unique venue booking for photoshoots and video shoots more easy and accessible. </P>
-              <a href="">Read more</a>
+              <a href="" class="button">Read more</a>
             </div>
           </div>
         </div>
@@ -72,9 +76,9 @@
     </main>
     <!-- For the footer  -->
     <footer>
-      <div>
+      <div id="contact">
         <h2> Thanks for Visiting! </h2>
-        <p> Let's get in touch and create together! For opportunities, email me at <a href="mailto:jbreyes24@gmail.com">jbreyes24@gmail.com</a> or call: <a href="tel:+491234567">+49 1234567</a>
+        <p> Let's get in touch and create together! For opportunities, email me at <a href="mailto:jbreyes24@gmail.com" class="button contact">jbreyes24@gmail.com</a> or call: <a href="tel:+491234567" class = "button contact">+49 1234567</a>
         </P>
         <div>
           <!--Social Media Layout and Placeholders-->
