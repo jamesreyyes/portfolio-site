@@ -1,6 +1,7 @@
 body {
   background-color: #DCE1DE;
   font-family: 'Raleway', sans-serif;
+font-family: 'Wendy One', sans-serif;
   font-size: 16px;
   /* Sets the font size to 16px */
   font-weight: 300;
@@ -10,6 +11,24 @@ body {
   color: #000000;
 }
 
+main{
+  padding: 10px;
+  margin: 10px;
+position: relative;
+}
+
+
+
+header {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+box-shadow: -1px 10px 26px 0px rgba(50, 50, 50, 0.8);
+position: relative;
+}
+
+
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
@@ -17,11 +36,13 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 2.75em;
   font-weight: 700;
+font-family: 'Wendy One', sans-serif;
 }
 
 h2 {
   font-size: 2.25em;
   font-weight: 700;
+  font-family: 'Wendy One', sans-serif;
 }
 
 h3 {
@@ -32,6 +53,10 @@ h3 {
 h4 {
   font-size: 1.35em;
   font-weight: 400;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
 }
 
 a {
@@ -93,15 +118,88 @@ a:active {
   color: #ffffff;
 }
 
-#logo {
-  width: 150px;
-  height: auto;
+.logo {
+  max-width: 250px;
 }
 
 img {
   width: 100%;
 }
 
-#hero
-#worked
+
+/* Layout Styling */
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+.container {
+  padding: 0 15px;
+}
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+.logo {
+  max-width: 250px;
+}
+
+#logo {
+width:150px;
+height: auto;
+}
+
+#skills ul {
+  font-family: 'Raleway', sans-serif;
+}
+
+#hero h1,p {
+  text-align: center; /* Centers text */
+
+}
+
+#hero {
+  background-color: #9cc5a1;
+  padding: 20px 0;
+   display: inline-block;
+   width: 100%;
+   line-height: normal;
+}
+
+#work
+h3,p {
+  text-align: center;
+}
+button {
+  float:right;
+}
+
+#casestudy h1,h2 {
+  text-align: center;
+}
+#casestudy ul {
+font-family: 'Raleway', sans-serif;
+}
+
 #contact
+h2 {
+  text-align: center;

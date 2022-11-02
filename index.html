@@ -4,7 +4,7 @@
 <head>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Wendy+One&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="author" content="YourName">
@@ -15,60 +15,59 @@
 <body>
   <!-- For the header -->
   <header>
-    <div></div>
     <!-- For the navigation -->
-    <div>
+    <div class="container">
       <picture>
         <a href="index.html" <source srcset="img/logo.jpg" media="(max-width:767px)">
           <img id="logo" src="img/logo.jpg" alt="logo">
       </picture>
       <nav>
-        <u1>
+        <ul class="navigation">
           <li><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="#contact">Contact</a></li>
-        </u1>
+        </ul>
       </nav>
     </div>
   </header>
   <main>
     <!-- For the hero section -->
     <div id="hero">
-      <div>
-        <h1>Hi, my name is James Reyes <br>
+      <div class="container">
+        <h1>Hi, I'm James. <br>
           <span>I'm a UI/UX Designer based in Los Angeles! </span>
         </h1>
         <p> creating thoughtful designs to enhance the human experience. </p>
       </div>
     </div>
     <!-- For your work/projects -->
-    <div>
-      <div>
+    <div id="work">
+      <div class="container">
         <h2> My Work </h2>
-        <div id="work">
+        <div class="row">
+          <div>
+            <h3> Spoiled Milk </h3>
+            <p> Fridge Manager app that tracks expiration dates and builds recipes based on food inside your fridge </P>
+          </div>
           <div>
             <picture>
               <source srcset="img/spoiled_milk/spoiledmilk_images_small/spoiledmilktb@1.jpg" media="(max-width:767px)">
               <img src="img/spoiled_milk/spoiledmilk_images_large/spoiledmilktb@2.jpg" alt="spoiled milk">
             </picture>
-          </div>
-          <div>
-            <h3> Spoiled Milk </h3>
-            <p> Fridge Manager app that tracks expiration dates and builds recipes based on food inside your fridge </P>
             <a href="spoiled_milk.html" class="button">Read more</a>
           </div>
         </div>
         <!-- Project 2 -->
         <div>
           <div>
+            <h3> Film Space </h3>
+            <p> A responsive web app that makes unique venue booking for photoshoots and video shoots more easy and accessible. </P>
+          </div>
+          <div>
             <picture>
               <source srcset="img/film_space/filmspace_images_small/filmspace_thumbnail_small.jpg" media="(max-width:767px)">
               <img src="img/film_space/filmspace_images_large/filmspace_thumbnail_large.jpg" alt="film space">
             </picture>
-          </div>
-          <div>
-            <h3> Film Space </h3>
-            <p> A responsive web app that makes unique venue booking for photoshoots and video shoots more easy and accessible. </P>
             <a href="" class="button">Read more</a>
           </div>
         </div>
@@ -76,8 +75,8 @@
     </div>
   </main>
   <!-- For the footer  -->
-  <footer>
-    <div id="contact">
+  <footer id="contact">
+    <div class="container">
       <h2> Thanks for Visiting! </h2>
       <p> Let's get in touch and create together! For opportunities, email me at <a href="mailto:jbreyes24@gmail.com" class="button contact">jbreyes24@gmail.com</a> or call: <a href="tel:+491234567" class="button contact">+49 1234567</a>
       </P>
