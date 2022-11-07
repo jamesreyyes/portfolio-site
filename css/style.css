@@ -62,7 +62,7 @@ p {
 }
 
 a {
-  color: #black;
+  color: black;
   text-decoration: none;
   /* No underlining */
 }
@@ -153,7 +153,7 @@ nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 400;
-  color: black
+  color: black;
 font-family: 'Wendy One', sans-serif;
 }
 
@@ -295,10 +295,10 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-  col-lg-7 {
+  .col-lg-7 {
     width: 58.33%;
   }
-  col-lg-5 {
+  .col-lg-5 {
     width: 41.66%;
   }
 }
