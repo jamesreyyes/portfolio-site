@@ -4,7 +4,8 @@
 <head>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Wendy+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,800;1,400&family=Raleway&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/1c2aadacdd.js" crossorigin="anonymous"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="author" content="YourName">
@@ -17,25 +18,23 @@
   <header>
 
     <!-- For the navigation -->
-    <div>
+    <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
       <picture>
         <a href="index.html" <source srcset="img/logo.png" media="(max-width:760px)">
           <img id="logo" src="img/logo.png" alt="logo">
       </picture>
       <nav>
-        <ul>
-          <li>
-            <a href="index.html">Work</a>
-          </li>
-          <li>
-            <a href="about.html">About</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
+        <ul class="navigation">
+          <li><a href="index.html">Work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fa-solid fa-bars"></i></a></li>
         </ul>
       </nav>
     </div>
+  </div>
+  </header>
   </header>
   <!-- For your story and skills -->
   <main>
@@ -44,19 +43,18 @@
         <h1> My story so far.. </h1>
         <picture>
           <source srcset="img/websitephoto_small.jpg" media="(max-width:767px)">
-          <img src="img/websitephoto_large.jpg" alt="hs">
+          <img id="about-img" src="img/websitephoto_large.jpg" alt="hs">
         </picture>
       <!-- row for columns -->
         <div class="row">
           <!-- column 1 -->
           <div class="column col-md-6 col-lg-7">
-            <h2>My Story</h2>
             <p>I’m a UX/UI designer passionate about helping people create visually appealing products that improve people’s lives <br> I have experience in running my own independent insurance agency which taught me to juggle many roles to be
               successful. I worked on managing and organizing sales, building brand awareness through social media, and delivering unique solutions to each client. I recently retrained in UI/UX through the intensive UI immersion course at
               Careerfoundry so I could start a career in product design. My goal is to continue helping others by offering user centric and aesthetically pleasing design solutions for tech and video game companies that align with my personal
               interests. <br>
             </p>
-            <h3> Things I enjoy </h3>
+            <h2> Things I enjoy </h2>
             <p> I was always attracted to the camera. As a kid, I developed a passion for film making and photography and still carry that eagerness to create til this day. I realized that having this drive to create formed my creative bones and eye
               for aesthetics and led me to discover UX/UI design, where I can apply my skills to the professional atmosphere. In addition to this I enjoy traveling, eating new cuisine, playing video games, going to the gym, and spending time with my
               family. </p>
@@ -124,6 +122,10 @@
       <p> Copyright James Reyes 2022 </p>
     </div>
   </footer>
+  <script
+  src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
 </body>
 
