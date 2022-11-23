@@ -16,10 +16,8 @@ font-family: 'Raleway', sans-serif;
 }
 
 main {
-  padding: 10px;
-    padding-top: 56px;
-  margin: 10px;
   position: relative;
+  padding-top:0px;
 }
 
 header {
@@ -30,6 +28,9 @@ header {
   position: relative;
 }
 
+strong{
+ font-weight:bold;
+}
 
 h1, h2, h3, h4 {
   line-height: 1.4;
@@ -37,13 +38,13 @@ h1, h2, h3, h4 {
 
 h1 {
   font-size: 2.75em;
-  font-weight: 700;
+  font-weight: 600;
   font-family: 'Playfair Display', serif;
 }
 
 h2 {
   font-size: 2.25em;
-  font-weight: 700;
+  font-weight: 600;
   font-family: 'Playfair Display', serif;
 }
 
@@ -86,6 +87,8 @@ a:active {
   color: #064635;
   text-decoration: underline;
 }
+
+
 
 
 .button {
@@ -141,7 +144,7 @@ img {
 nav>ul {
   list-style-type: none;
   padding: 0;
-margin: 1em 0;
+margin: 0;
 }
 
 
@@ -223,26 +226,39 @@ text-align: center;
 }
 
 
-#hero h1, p {
-  text-align: left;
-  /* Centers text */
+#hero h1 {
   color: white;
+  text-align: left;
+  margin:0px;
+}
+
+#hero h3 {
+  color: white;
+  text-align: left;
 }
 
 #hero {
   background-color: #ffffff;
-  padding: 10px;
+  padding: 20px;
+  padding-top: 40px;
   display: inline-block;
   width: 100%;
+  height: auto;
   line-height: normal;
-  border-radius: 5px 20px 5px;
- background: #446A46;
- padding-bottom: 20px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+ background: #152E29;
 }
+
+
 
 #work p {
   text-align: left;
   color: black;
+}
+
+#work {
+  padding: 20px;
 }
 
 #contact p {
@@ -250,20 +266,36 @@ text-align: center;
 }
 
 #contact svg{
-  margin:-10px;
+  height: 60px;
+  width: 60px;
 }
 
-#casestudy h1, h2 {
+
+
+#casestudy_projectcontext p, h3{
+  color: black;
   text-align: center;
 }
 
-#casestudy ul {
-  font-family: 'Raleway', sans-serif;
+#casestudy_hero h1,p,h2{
+  color: black;
+  text-align: center;
+
+}
+
+#casestudy_img_1{
+  max-width: 100%;
+  height:auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
 }
 
 #casestudy p{
   color: black;
 }
+
 
 #about p{
     color: black;
@@ -277,31 +309,7 @@ text-align: center;
   border-radius: 25px;
 }
 
-@keyframes color-change {
-  from {fill: #edc655;}
-  to {fill: #f76414;}
-}
-.sun {
-  animation: 4s color-change infinite alternate linear;
-}
 
-@keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
-}
-
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
-}
-
-@keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
-}
-
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
-}
 
 @keyframes pop-in {
   0% {
@@ -315,6 +323,40 @@ text-align: center;
 }
 .animate-pop-in {
   animation: pop-in .6s ease-out forwards;
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.column-process {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+.column-compFS {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+.column_st {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+table, th, td {
+  border:1px solid black;
+  padding:10px;
 }
 
 /* ==============================
@@ -353,6 +395,7 @@ Medium devices (640px and larger)
 .navtoggle li:not(:last-child) {
   display: inline-block;
 }
+ .prev, .next,.text {font-size: 11px}
   }
 /* ==============================
 Large devices (1024px or larger)
