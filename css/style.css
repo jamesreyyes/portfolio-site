@@ -77,10 +77,6 @@ a:focus {
 
 }
 
-a:visited {
-  /* visited link */
-  color: #064635;
-}
 
 a:active {
   /* selected link */
